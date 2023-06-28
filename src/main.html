@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="/dist/output.css">
     <title>Document</title>
 </head>
-<body>
+<body class="bg-secondary">
     <!-- header start -->
-    <header class="flex justify-end w-full max-w-full bg-slate-100">
+    <header class="flex justify-end w-full max-w-full bg-primary z-50">
         <div class="header container flex justify-end w-full max-w-full lg:h-16">
             <h1 class="text-3xl font-bold text-red-500 left-0 mx-4 mt-2 lg:mb-4 lg:mt-3 absolute lg:text-4xl"><a href="#">Bakmie A2</a></h1>
 
-            <button class="font-medium hover:bg-slate-200 m-2 p-1 rounded-md h-fit lg:hidden" id="btn-nav">Click</button>
+            <button class="font-medium hover:bg-slate-200 m-2 p-1 rounded-md h-fit lg:m-5" id="btn-nav">Nav</button>
 
             <nav class="flex flex-wrap" id="nav-menu">
                 <div>
@@ -29,80 +29,67 @@
     <!-- header end -->
 
     <!-- about start -->
-    <section class=" bg-slate-100">
+    <section class=" bg-secondary">
         <div class="container flex">
             <div class="flex flex-wrap ml-2 mr-2">
                 <div class="w-full lg:w-1/2 mt-12" id="about">
                     <h1 class="text-2xl mb-2 font-semibold">About Us</h1>
                     <h3 class="text-lg my-2 font-medium text-red-500">Bakmie A2</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe error perferendis neque? Ipsum ullam praesentium dolore ex exercitationem quod quo vero et, molestiae magnam consequuntur aperiam fugit beatae animi illo?</p>
-
-                    <div class="m-3">
-                        <button class="text-base font-medium hover:underline" id="menu-katsu">Bakmie Chicken Katsu</button>
-                        <img src="/assets/WhatsApp Image 2023-06-25 at 2.38.43 PM.jpeg" alt="" id="katsu">
-                    </div>
-                    <div class="m-3">
-                        <button class="text-base font-medium hover:underline" id="menu-teriyaki">Bakmie Chicken Teriyaki</button>
-                        <img src="/assets/WhatsApp Image 2023-06-25 at 2.38.45 PM.jpeg" alt="" id="teriyaki">
-                    </div>
-                    <div class="m-3">
-                        <button  class="text-base font-medium hover:underline" id="menu-wings">Bakmie Spicy Wings</button>
-                        <img src="/assets/WhatsApp Image 2023-06-25 at 5.00.44 PM.jpeg" alt="" id="wings">
-                    </div>
-                    <div class="m-3">
-                        <button  class="text-base font-medium hover:underline" id="menu-jus">Just Timun Selasih</button>
-                        <img src="/assets/WhatsApp Image 2023-06-25 at 5.01.18 PM.jpeg" alt="" id="jus">
-                    </div>
-
-                    <!-- <div class="mt-7 lg:ml-20" id="menu">
-                        <h1 class="text-xl font-semibold">Our Menu</h1>
-                        <div class="h-96 carousel carousel-vertical rounded-box">
-                            <div class="carousel-item h-full">
-                              <img src="/assets/WhatsApp Image 2023-06-25 at 2.38.43 PM.jpeg" />
-                            </div> 
-                            <div class="carousel-item h-full">
-                              <img src="/assets/WhatsApp Image 2023-06-25 at 2.38.45 PM.jpeg" />
-                            </div> 
-                            <div class="carousel-item h-full">
-                              <img src="/assets/WhatsApp Image 2023-06-25 at 5.00.44 PM.jpeg" />
-                            </div> 
-                            <div class="carousel-item h-full">
-                              <img src="/assets/WhatsApp Image 2023-06-25 at 5.01.18 PM.jpeg" />
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
-
                 <div class="w-full lg:w-1/2">
-                    <img src="/assets/WhatsApp Image 2023-06-25 at 2.39.23 PM.jpeg" alt="" class="ml-3 lg:ml-10 mt-12 lg:w-fit lg:h-fit">
+                    <img src="/assets/My project-1.png" alt="" class="ml-3 lg:ml-10 mt-12 lg:w-auto lg:h-96">
                 </div>
-
             </div>   
         </div>
     </section>
     <!-- about end -->
 
+    <!-- Menu start -->
+    <section class="bg-secondary">
+        <div class="container" id="menu">
+            <h1 class="text-2xl font-semibold m-3">Our Menu</h1>        
+            <div class="m-3">
+                <button class="text-base font-medium hover:underline" id="menu-katsu">Bakmie Chicken Katsu</button>
+                <img src="/assets/WhatsApp Image 2023-06-25 at 2.38.43 PM.jpeg" alt="" id="katsu" class="h-96 w-auto">
+            </div>
+            <div class="m-3">
+                <button class="text-base font-medium hover:underline" id="menu-teriyaki">Bakmie Chicken Teriyaki</button>
+                <img src="/assets/WhatsApp Image 2023-06-25 at 2.38.45 PM.jpeg" alt="" id="teriyaki" class="h-96 w-auto">
+            </div>
+            <div class="m-3">
+                <button  class="text-base font-medium hover:underline" id="menu-wings">Bakmie Spicy Wings</button>
+                <img src="/assets/WhatsApp Image 2023-06-25 at 5.00.44 PM.jpeg" alt="" id="wings" class="h-96 w-auto">
+            </div>
+            <div class="m-3">
+                <button  class="text-base font-medium hover:underline" id="menu-jus">Just Timun Selasih</button>
+                <img src="/assets/WhatsApp Image 2023-06-25 at 5.01.18 PM.jpeg" alt="" id="jus" class="h-96 w-auto">
+            </div>
+        </div>
+    </section>
+    <!-- menu end -->
+
 
     <!-- testimony start -->
-    <section class="bg-slate-200">
-        <div id="testimony" class="mt-10">
-            <h1 class="text-xl font-bold ml-2 mb-3">What our consument says about us!</h1>
+    <section class="bg-secondary">
+        <div id="testimony" class="">
+            <h1 class="text-xl font-bold ml-2 mb-3 mt-5">What our consument says about us!</h1>
             <div class=" flex flex-wrap justify-around">
-                <div class="card w-80 bg-base-100 shadow-xl">
+                <div class="card w-64 bg-base-100 shadow-xl">
                     <figure><img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="img" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Alex</h2>
                       <p>Best Bakmie in town!</p>
                     </div>
                 </div>
-                <div class="card w-80 bg-base-100 shadow-xl">
+                <div class="card w-64 bg-base-100 shadow-xl">
                     <figure><img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="img" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Jena</h2>
                       <p>Best Bakmie in town!</p>
                     </div>
                 </div>
-                <div class="card w-80 bg-base-100 shadow-xl">
+                <div class="card w-64 bg-base-100 shadow-xl">
                     <figure><img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="img" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">John</h2>
@@ -115,9 +102,9 @@
     <!-- testimony end -->
 
     <!-- contact start -->
-    <section class="bg-slate-700">
-        <div id="contact" class=" mt-10 ml-2">
-            <h1 class="text-xl text-white font-semibold">Contact Us</h1>
+    <section class="bg-third">
+        <div id="contact" class="ml-2">
+            <h1 class="text-xl text-white font-semibold mt-10 mb-4">Contact Us</h1>
         </div>
         <div class="flex flex-row">
             <div class="mx-2 hover:bg-white rounded-lg">

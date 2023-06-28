@@ -2,7 +2,6 @@
 
 window.onscroll = function () {
     const header = document.querySelector('header');
-    const fixedNav = header.offsetTop;
   
     if (window.pageYOffset > 0) {
       header.style = "box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5); z-index-:1000; position:sticky; top:0";
@@ -17,11 +16,15 @@ window.onscroll = function () {
 
 const btnNav = document.getElementById('btn-nav')
 const navMenu = document.getElementById('nav-menu')
+navMenu.style.display = "none"
 
 btnNav.addEventListener('click', function(){
-  btnNav.classList.toggle('btnNav-active');
-  navMenu.classList.toggle('hidden');
-})
+  if (btnNav.classList.toggle('menuKatsu-active')) {
+   navMenu.style.display = "block";
+  }else{
+   navMenu.style.display = "none";
+  }
+ })
 
 //click menu
 
